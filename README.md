@@ -27,10 +27,16 @@ to your `app` folder. The affected files can be copied or merged from
 Adjust the ".env" to suit your app, especially the base URL.
 and database settings.
 
+We have adopted Twig as the template engine. To use Twig with CodeIgniter 4, the library [kaleidpixel/codeigniter4-twig](https://github.com/kaleidpixel/codeigniter4-twig), which is a customized fork of [daycry/twig](https://github.com/daycry/twig) published by Mr. daycry, is used. Execute the following command.
+
+```bash
+php spark twig:publish
+```
+
 When using Shield, the official authentication and authorization framework for CodeIgniter 4, execute the following command. 
 Please refer to the [official documentation for Shield](https://shield.codeigniter.com/).
 
-```shell
+```bash
 php spark shield:setup
 ```
 
