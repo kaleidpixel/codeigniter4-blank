@@ -52,6 +52,7 @@ class CMD {
 
         copy($root.DIRECTORY_SEPARATOR.'env', $root.DIRECTORY_SEPARATOR.'.env');
         self::delTree($root.DIRECTORY_SEPARATOR.'scripts');
+        self::delStr($root.DIRECTORY_SEPARATOR.'.gitignore', '# kaleidpixel/codeigniter4-blank');
 
         echo 'Files needed for Codeigniter 4 are copied.';
     }
@@ -65,5 +66,21 @@ class CMD {
         }
 
         return rmdir($dir);
+    }
+
+    public static function delStr(string $file, string $keyword)
+    {
+        $lines = file($file, FILE_IGNORE_NEW_LINES);
+        $output = [];
+
+        foreach ($lines as $line) {
+            if (trim($line) === $keyword) {
+                break;
+            }
+
+            $output[] = $line;
+        }
+
+        file_put_contents($file, implode("\n", $output));
     }
 }

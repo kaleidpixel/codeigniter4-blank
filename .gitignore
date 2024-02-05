@@ -127,6 +127,7 @@ nb-configuration.xml
 /phpunit*.xml*
 /.phpunit.*.cache
 
+# kaleidpixel/codeigniter4-blank
 tests/
 writable/
 public/
