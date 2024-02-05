@@ -1,0 +1,53 @@
+#--------------------------------------------------------------------
+# Example Environment Configuration file
+#
+# This file can be used as a starting point for your own
+# custom .env files, and contains most of the possible settings
+# available in a default install.
+#
+# By default, all of the settings are commented out. If you want
+# to override the setting, you must un-comment it by removing the '#'
+# at the beginning of the line.
+#--------------------------------------------------------------------
+
+#--------------------------------------------------------------------
+# ENVIRONMENT
+#
+# 本番: production
+# 開発: development
+#--------------------------------------------------------------------
+
+CI_ENVIRONMENT=production
+
+#--------------------------------------------------------------------
+# APP
+#--------------------------------------------------------------------
+
+app.baseURL='https://localhost:8080/'
+
+#--------------------------------------------------------------------
+# DATABASE
+#
+# database.tests は PHPUnit 実行時に使用されるもので
+# 俗にいうローカルサーバーや開発サーバーなどのテストサーバーとは異なります
+#--------------------------------------------------------------------
+
+database.default.hostname=localhost
+database.default.database=ci4
+database.default.username=root
+database.default.password=root
+database.default.DBPrefix=
+database.default.port=3306
+
+# database.tests.hostname=localhost
+# database.tests.database=ci4_test
+# database.tests.username=root
+# database.tests.password=root
+# database.tests.DBPrefix=
+# database.tests.port=3306
+
+#--------------------------------------------------------------------
+# LOGGER
+#--------------------------------------------------------------------
+
+logger.threshold=4
