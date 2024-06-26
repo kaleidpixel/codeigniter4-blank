@@ -16,11 +16,11 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
+        "ext-mbstring": "*",
         "codeigniter4/framework": "^4.0",
         "codeigniter4/shield": "^1.0",
         "codeigniter4/translations": "^4.0",
-        "kaleidpixel/codeigniter4-twig": "^1.2",
-        "ext-mbstring": "*"
+        "daycry/twig": "^1.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9",

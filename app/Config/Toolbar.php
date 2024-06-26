@@ -9,8 +9,8 @@ use CodeIgniter\Debug\Toolbar\Collectors\Files;
 use CodeIgniter\Debug\Toolbar\Collectors\Logs;
 use CodeIgniter\Debug\Toolbar\Collectors\Routes;
 use CodeIgniter\Debug\Toolbar\Collectors\Timers;
-use CodeIgniter\Debug\Toolbar\Collectors\Views;
-use App\Debug\Toolbar\Collectors\Twigs;
+//use CodeIgniter\Debug\Toolbar\Collectors\Views;
+use Daycry\Twig\Debug\Toolbar\Collectors\Twig;
 
 /**
  * --------------------------------------------------------------------------
@@ -39,7 +39,7 @@ class Toolbar extends BaseConfig
         Database::class,
         Logs::class,
 //        Views::class,
-        Twigs::class,
+        Twig::class,
 //        \CodeIgniter\Debug\Toolbar\Collectors\Cache::class,
         Files::class,
         Routes::class,
